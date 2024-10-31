@@ -1,0 +1,26 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "wp-admin/options-general.php?page=pro-mime-types",
+	"preferredVersions": {
+		"php": "8.1",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "wordpress.org/plugins",
+				"slug": "pro-mime-types"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "login"
+		}
+	]
+}
